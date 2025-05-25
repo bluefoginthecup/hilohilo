@@ -1,0 +1,13 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1748155746
+icon.svg::CompressedTexture2D/CompressedTexture2D::2743602453568887517::1748153092::1748153112::1::::<><><>0<>0<>4c61adcd9a34e8963c4dc98a40917b9f<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+::res://assets/::1748155520
+hat_stand.png::CompressedTexture2D/CompressedTexture2D::4682445323297631932::1747657553::1748155231::1::::<><><>0<>0<>8e6a4bac87d6994e559034334b5e2090<>res://.godot/imported/hat_stand.png-5cba6ab3b3cf23c840c29f49f3fb428e.ctex::
+jordy.png::CompressedTexture2D/CompressedTexture2D::8273816388585974444::1744637998::1748154365::1::::<><><>0<>0<>c2f120fe2e4fe0251ab56a53e879e495<>res://.godot/imported/jordy.png-1c3ac0048f7f290a5c1d15944ef317da.ctex::
+shop_bg.png::CompressedTexture2D/CompressedTexture2D::6486358246775171126::1747658927::1748155520::1::::<><><>0<>0<>b1734f731f6e9f4863a6917ced99456c<>res://.godot/imported/shop_bg.png-c40d1400b158201a3b41b69124049c68.ctex::
+::res://scenes/::1748155746
+main.tscn::PackedScene::8037420949182018823::1748153299::0::1::::<><><>0<>0<><>::
+Shop.tscn::PackedScene/PackedScene::3692061005486039575::1748155406::0::1::::<><><>0<>0<><>::
+::res://scripts/::1748153423
+::res://story_data/::1748153444
+::res://ui/::1748153451

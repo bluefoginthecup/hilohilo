@@ -1,0 +1,10 @@
+.import/
+.export/
+.export_settings.cfg
+.DS_Store
+Thumbs.db
+*.exe
+*.pck
+*.apk
+*.zip
+godot/tmp/
