@@ -1,10 +1,35 @@
+# Godot-specific
+.godot/
 .import/
-.export/
-.export_settings.cfg
-.DS_Store
-Thumbs.db
-*.exe
+export.cfg
+export_presets.cfg
+
+# Build artifacts
+build/
+bin/
+mono/
+
+# Godot export bundles (do not commit these)
 *.pck
-*.apk
 *.zip
-godot/tmp/
+*.tpz
+
+# Native iOS artifacts
+*.xcframework/
+*.a
+
+# Flutter / iOS build outputs
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/.symlinks/
+ios/Pods/
+ios/Runner.xcworkspace/
+DerivedData/
+
+# macOS
+.DS_Store
+
+# Other editor files
+*.swp
+*.tmp
+
