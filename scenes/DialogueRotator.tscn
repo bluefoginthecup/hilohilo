@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://dm8n7crw3uddm"]
+
+[ext_resource type="Script" uid="uid://n4gbxwbe7qju" path="res://scenes/DialogueRotator.gd" id="1_iyvd8"]
+
+[node name="DialogueRotator" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_iyvd8")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.0
+autostart = true

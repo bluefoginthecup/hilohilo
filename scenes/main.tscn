@@ -1,8 +1,12 @@
-[gd_scene load_steps=4 format=3 uid="uid://dmrnfb7rqydp4"]
+[gd_scene load_steps=8 format=3 uid="uid://dmrnfb7rqydp4"]
 
 [ext_resource type="Script" uid="uid://2ovrbi03oavy" path="res://scenes/main.gd" id="1_sugp2"]
 [ext_resource type="Texture2D" uid="uid://dp45suph3qfyi" path="res://assets/jordy.png" id="2_jyhfs"]
+[ext_resource type="Texture2D" uid="uid://bfu08xecy8560" path="res://assets/room_bg_1500.png" id="2_tbgi4"]
 [ext_resource type="Texture2D" uid="uid://b7yhgqb7dxkoq" path="res://assets/hat_stand.png" id="3_tbgi4"]
+[ext_resource type="PackedScene" uid="uid://dm8n7crw3uddm" path="res://scenes/DialogueRotator.tscn" id="5_tbgi4"]
+[ext_resource type="Texture2D" uid="uid://ccd41civ2qln2" path="res://assets/bookshelf_pressed.png" id="7_85g3d"]
+[ext_resource type="Texture2D" uid="uid://drshgw24rjr8x" path="res://assets/bookshelf_glow.png" id="8_choun"]
 
 [node name="Main" type="Control"]
 layout_mode = 3
@@ -13,27 +17,64 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_sugp2")
 
-[node name="Jordy" type="Sprite2D" parent="."]
-position = Vector2(274, 370)
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = 5.0
+offset_right = 860.0
+offset_bottom = 1853.0
+grow_horizontal = 2
+grow_vertical = 2
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("2_jyhfs")
-
-[node name="DialogueLabel" type="Label" parent="."]
-offset_left = 113.0
-offset_top = 31.0
-offset_right = 431.0
-offset_bottom = 128.0
-theme_override_font_sizes/font_size = 39
-text = "안녕하세요 아가씨!"
+texture = ExtResource("2_tbgi4")
+stretch_mode = 6
 
 [node name="hatStandBtn" type="TextureButton" parent="."]
 layout_mode = 0
-offset_left = 274.0
-offset_top = 370.0
-offset_right = 1298.0
-offset_bottom = 1394.0
-scale = Vector2(0.5, 0.5)
+offset_left = 298.0
+offset_top = 722.0
+offset_right = 1322.0
+offset_bottom = 1746.0
+scale = Vector2(0.4, 0.4)
 texture_normal = ExtResource("3_tbgi4")
+
+[node name="BookshelfBtn" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 275.0
+offset_right = 378.0
+offset_bottom = 1427.0
+texture_normal = ExtResource("7_85g3d")
+texture_pressed = ExtResource("7_85g3d")
+texture_hover = ExtResource("8_choun")
+
+[node name="Jordy" type="Sprite2D" parent="."]
+position = Vector2(150, 900)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("2_jyhfs")
+
+[node name="DialogueLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 47.0
+offset_top = 464.0
+offset_right = 678.0
+offset_bottom = 689.0
+theme_override_font_sizes/font_size = 39
+text = "
+    \"안녕하세요 아가씨\",
+    \"모자걸이를 클릭해 상점에 가보세요!\",
+    \"오늘 날씨 참 좋네요\""
+
+[node name="DialogueRotator" parent="." instance=ExtResource("5_tbgi4")]
+layout_mode = 1
+offset_left = 69.0
+offset_top = 93.0
+offset_right = 69.0
+offset_bottom = 93.0
+label_path = NodePath("../DialogueLabel")
 
 [connection signal="pressed" from="hatStandBtn" to="." method="_on_hat_stand_btn_pressed"]
 [connection signal="pressed" from="hatStandBtn" to="." method="_on_HatStandBtn_pressed"]

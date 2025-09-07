@@ -1,14 +1,15 @@
 [gd_scene load_steps=3 format=3 uid="uid://bsupx8m25ui2b"]
 
-[ext_resource type="Texture2D" uid="uid://cyobmw14cuwhq" path="res://assets/shop_bg.png" id="1_lx5au"]
 [ext_resource type="Script" uid="uid://nv86pwk7nlyv" path="res://scenes/shop.gd" id="1_xfvoa"]
+[ext_resource type="Texture2D" uid="uid://bn5p3a43fso8p" path="res://shop750.png" id="2_xfvoa"]
 
 [node name="Shop" type="Node2D"]
 script = ExtResource("1_xfvoa")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(514, 774)
-texture = ExtResource("1_lx5au")
+position = Vector2(340, 680)
+scale = Vector2(0.9, 0.9)
+texture = ExtResource("2_xfvoa")
 
 [node name="BackBtn" type="Button" parent="."]
 custom_minimum_size = Vector2(150, 50)

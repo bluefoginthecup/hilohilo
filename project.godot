@@ -14,7 +14,25 @@ config/name="hilohilo"
 run/main_scene="uid://dmrnfb7rqydp4"
 config/features=PackedStringArray("4.4", "Mobile")
 config/icon="res://icon.svg"
+config/autoload_on_startup=false
+
+[autoload]
+
+SceneManager="*res://scripts/SceneManager.gd"
+
+[display]
+
+window/size/viewport_width=648
+window/size/viewport_height=1152
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+window/handheld/orientation=1
+
+[gui]
+
+theme/custom_font="uid://nxg5roctes4a"
 
 [rendering]
 
 renderer/rendering_method="mobile"
+textures/vram_compression/import_etc2_astc=true
