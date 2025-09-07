@@ -1,8 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://dmrnfb7rqydp4"]
+[gd_scene load_steps=9 format=3 uid="uid://dmrnfb7rqydp4"]
 
 [ext_resource type="Script" uid="uid://2ovrbi03oavy" path="res://scenes/main.gd" id="1_sugp2"]
 [ext_resource type="Texture2D" uid="uid://dp45suph3qfyi" path="res://assets/jordy.png" id="2_jyhfs"]
 [ext_resource type="Texture2D" uid="uid://bfu08xecy8560" path="res://assets/room_bg_1500.png" id="2_tbgi4"]
+[ext_resource type="PackedScene" uid="uid://24kaxuqolgom" path="res://ui/BookPicker.tscn" id="2_tipki"]
 [ext_resource type="Texture2D" uid="uid://b7yhgqb7dxkoq" path="res://assets/hat_stand.png" id="3_tbgi4"]
 [ext_resource type="PackedScene" uid="uid://dm8n7crw3uddm" path="res://scenes/DialogueRotator.tscn" id="5_tbgi4"]
 [ext_resource type="Texture2D" uid="uid://ccd41civ2qln2" path="res://assets/bookshelf_pressed.png" id="7_85g3d"]
@@ -16,6 +17,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_sugp2")
+picker_scene = ExtResource("2_tipki")
 
 [node name="Background" type="TextureRect" parent="."]
 layout_mode = 1
@@ -43,10 +45,11 @@ texture_normal = ExtResource("3_tbgi4")
 
 [node name="BookshelfBtn" type="TextureButton" parent="."]
 layout_mode = 0
-offset_left = 18.0
-offset_top = 275.0
-offset_right = 378.0
-offset_bottom = 1427.0
+offset_left = 9.0
+offset_top = 210.0
+offset_right = 177.0
+offset_bottom = 773.0
+scale = Vector2(1.15, 1.15)
 texture_normal = ExtResource("7_85g3d")
 texture_pressed = ExtResource("7_85g3d")
 texture_hover = ExtResource("8_choun")
@@ -70,10 +73,10 @@ text = "
 
 [node name="DialogueRotator" parent="." instance=ExtResource("5_tbgi4")]
 layout_mode = 1
-offset_left = 69.0
-offset_top = 93.0
-offset_right = 69.0
-offset_bottom = 93.0
+offset_left = 30.0
+offset_top = 522.0
+offset_right = 30.0
+offset_bottom = -425.0
 label_path = NodePath("../DialogueLabel")
 
 [connection signal="pressed" from="hatStandBtn" to="." method="_on_hat_stand_btn_pressed"]
