@@ -1,0 +1,87 @@
+[gd_scene load_steps=4 format=3 uid="uid://bdhw5rcrhh3r4"]
+
+[ext_resource type="Script" uid="uid://1uvdb55ae4xo" path="res://scenes/WalkTrail.gd" id="1_2il3u"]
+[ext_resource type="Script" uid="uid://e40rqgwc6nxs" path="res://scenes/BG.gd" id="3_u1tyx"]
+[ext_resource type="Texture2D" uid="uid://dh6lpbjprty6l" path="res://assets/images/art/road.png" id="7_4jwg5"]
+
+[node name="WalkTrail" type="Node2D"]
+script = ExtResource("1_2il3u")
+
+[node name="BG" type="Node2D" parent="."]
+script = ExtResource("3_u1tyx")
+
+[node name="A" type="Sprite2D" parent="BG"]
+texture_filter = 1
+texture_repeat = 1
+position = Vector2(407, 611)
+scale = Vector2(1.42778, 0.94)
+texture = ExtResource("7_4jwg5")
+
+[node name="B" type="Sprite2D" parent="BG"]
+texture_filter = 1
+texture_repeat = 1
+position = Vector2(1422, 611)
+scale = Vector2(1.42, 0.941)
+texture = ExtResource("7_4jwg5")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="HBoxContainer" type="VBoxContainer" parent="CanvasLayer"]
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_right = 192.0
+offset_bottom = 492.0
+grow_vertical = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+metadata/_edit_group_ = true
+
+[node name="Start10mBtn" type="Button" parent="CanvasLayer/HBoxContainer"]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_font_sizes/font_size = 30
+text = "10분 산책하기"
+
+[node name="BackBtn" type="Button" parent="CanvasLayer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_font_sizes/font_size = 30
+text = "집 앞으로"
+
+[node name="LblRemain" type="Label" parent="CanvasLayer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "남은시간 10:00"
+
+[node name="Prog" type="ProgressBar" parent="CanvasLayer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+
+[node name="Tick" type="Timer" parent="CanvasLayer/HBoxContainer"]
+
+[node name="EndTimer" type="Timer" parent="CanvasLayer/HBoxContainer"]
+wait_time = 600.0
+one_shot = true
+
+[node name="PauseResumeBtn" type="Button" parent="CanvasLayer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "일시정지/재개"
+metadata/_edit_use_anchors_ = true
+
+[node name="SpeedDownBtn" type="Button" parent="CanvasLayer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "-"
+
+[node name="SpeedLabel" type="Label" parent="CanvasLayer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "속도: 0"
+
+[node name="SpeedUpBtn" type="Button" parent="CanvasLayer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "+"

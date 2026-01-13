@@ -1,35 +1,27 @@
-# Godot-specific
-.godot/
+
+# --- Godot generated/cache ---
 .import/
-export.cfg
-export_presets.cfg
+.export/
+*.import
 
-# Build artifacts
-build/
+# Godot 4.x editor & cache (local machine)
+.godot/
+.editor/
+
+# Mono / C# (쓰면)
+.mono/
+
+# Build outputs
 bin/
-mono/
+build/
+dist/
+export/
 
-# Godot export bundles (do not commit these)
-*.pck
-*.zip
-*.tpz
+# Logs
+*.log
 
-# Native iOS artifacts
-*.xcframework/
-*.a
-
-# Flutter / iOS build outputs
-ios/Flutter/Flutter.framework
-ios/Flutter/Flutter.podspec
-ios/.symlinks/
-ios/Pods/
-ios/Runner.xcworkspace/
-DerivedData/
-
-# macOS
+# OS / IDE
 .DS_Store
-
-# Other editor files
-*.swp
-*.tmp
-
+Thumbs.db
+.vscode/
+.idea/

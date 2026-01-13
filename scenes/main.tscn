@@ -1,13 +1,14 @@
-[gd_scene load_steps=9 format=3 uid="uid://dmrnfb7rqydp4"]
+[gd_scene load_steps=10 format=3 uid="uid://dmrnfb7rqydp4"]
 
-[ext_resource type="Script" uid="uid://2ovrbi03oavy" path="res://scenes/main.gd" id="1_sugp2"]
-[ext_resource type="Texture2D" uid="uid://dp45suph3qfyi" path="res://assets/jordy.png" id="2_jyhfs"]
-[ext_resource type="Texture2D" uid="uid://bfu08xecy8560" path="res://assets/room_bg_1500.png" id="2_tbgi4"]
-[ext_resource type="PackedScene" uid="uid://24kaxuqolgom" path="res://ui/BookPicker.tscn" id="2_tipki"]
-[ext_resource type="Texture2D" uid="uid://b7yhgqb7dxkoq" path="res://assets/hat_stand.png" id="3_tbgi4"]
-[ext_resource type="PackedScene" uid="uid://dm8n7crw3uddm" path="res://scenes/DialogueRotator.tscn" id="5_tbgi4"]
-[ext_resource type="Texture2D" uid="uid://ccd41civ2qln2" path="res://assets/bookshelf_pressed.png" id="7_85g3d"]
-[ext_resource type="Texture2D" uid="uid://drshgw24rjr8x" path="res://assets/bookshelf_glow.png" id="8_choun"]
+[ext_resource type="Script" uid="uid://2ovrbi03oavy" path="res://scenes/Main.gd" id="1_q8u5g"]
+[ext_resource type="PackedScene" uid="uid://24kaxuqolgom" path="res://ui/BookPicker.tscn" id="2_lhr70"]
+[ext_resource type="Texture2D" uid="uid://bfu08xecy8560" path="res://assets/room_bg_1500.png" id="3_wp0k4"]
+[ext_resource type="Texture2D" uid="uid://b7yhgqb7dxkoq" path="res://assets/hat_stand.png" id="4_bjd11"]
+[ext_resource type="Texture2D" uid="uid://cri157wb548sa" path="res://assets/window.png" id="5_qmy6f"]
+[ext_resource type="Texture2D" uid="uid://ccd41civ2qln2" path="res://assets/bookshelf_pressed.png" id="6_mwfav"]
+[ext_resource type="Texture2D" uid="uid://drshgw24rjr8x" path="res://assets/bookshelf_glow.png" id="7_3p2gp"]
+[ext_resource type="Texture2D" uid="uid://dp45suph3qfyi" path="res://assets/jordy.png" id="8_cvmbd"]
+[ext_resource type="PackedScene" uid="uid://dm8n7crw3uddm" path="res://scenes/DialogueRotator.tscn" id="9_ft6cd"]
 
 [node name="Main" type="Control"]
 layout_mode = 3
@@ -16,8 +17,8 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_sugp2")
-picker_scene = ExtResource("2_tipki")
+script = ExtResource("1_q8u5g")
+picker_scene = ExtResource("2_lhr70")
 
 [node name="Background" type="TextureRect" parent="."]
 layout_mode = 1
@@ -30,54 +31,68 @@ offset_right = 860.0
 offset_bottom = 1853.0
 grow_horizontal = 2
 grow_vertical = 2
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("2_tbgi4")
+scale = Vector2(0.43, 0.4)
+texture = ExtResource("3_wp0k4")
 stretch_mode = 6
 
 [node name="hatStandBtn" type="TextureButton" parent="."]
 layout_mode = 0
-offset_left = 298.0
-offset_top = 722.0
-offset_right = 1322.0
-offset_bottom = 1746.0
+offset_left = 148.0
+offset_top = 355.0
+offset_right = 1172.0
+offset_bottom = 1379.0
 scale = Vector2(0.4, 0.4)
-texture_normal = ExtResource("3_tbgi4")
+texture_normal = ExtResource("4_bjd11")
+
+[node name="WindowBtn" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.278
+anchor_right = 0.733
+anchor_bottom = 0.328
+offset_left = -36.144
+offset_top = 4.0
+offset_right = 35.016
+offset_bottom = 24.144
+texture_normal = ExtResource("5_qmy6f")
 
 [node name="BookshelfBtn" type="TextureButton" parent="."]
 layout_mode = 0
-offset_left = 9.0
-offset_top = 210.0
-offset_right = 177.0
-offset_bottom = 773.0
-scale = Vector2(1.15, 1.15)
-texture_normal = ExtResource("7_85g3d")
-texture_pressed = ExtResource("7_85g3d")
-texture_hover = ExtResource("8_choun")
+offset_left = 2.0
+offset_top = 165.0
+offset_right = 170.0
+offset_bottom = 728.0
+texture_normal = ExtResource("6_mwfav")
+texture_pressed = ExtResource("6_mwfav")
+texture_hover = ExtResource("7_3p2gp")
 
 [node name="Jordy" type="Sprite2D" parent="."]
-position = Vector2(150, 900)
+position = Vector2(302, 931)
 scale = Vector2(0.4, 0.4)
-texture = ExtResource("2_jyhfs")
+texture = ExtResource("8_cvmbd")
 
 [node name="DialogueLabel" type="Label" parent="."]
 layout_mode = 0
-offset_left = 47.0
-offset_top = 464.0
-offset_right = 678.0
-offset_bottom = 689.0
+offset_left = 8.0
+offset_top = 533.0
+offset_right = 663.0
+offset_bottom = 774.0
 theme_override_font_sizes/font_size = 39
-text = "
-    \"안녕하세요 아가씨\",
+text = "    \"안녕하세요 아가씨\",
     \"모자걸이를 클릭해 상점에 가보세요!\",
-    \"오늘 날씨 참 좋네요\""
+    \"오늘 날씨 참 좋네요\",
+\"창문을 탭하면 정원으로 나갈 수 있어요\""
 
-[node name="DialogueRotator" parent="." instance=ExtResource("5_tbgi4")]
+[node name="DialogueRotator" parent="." instance=ExtResource("9_ft6cd")]
 layout_mode = 1
-offset_left = 30.0
-offset_top = 522.0
-offset_right = 30.0
-offset_bottom = -425.0
+offset_left = 35.0
+offset_top = 569.0
+offset_right = 9.0
+offset_bottom = -383.0
+pivot_offset = Vector2(-185, 315)
 label_path = NodePath("../DialogueLabel")
 
-[connection signal="pressed" from="hatStandBtn" to="." method="_on_hat_stand_btn_pressed"]
 [connection signal="pressed" from="hatStandBtn" to="." method="_on_HatStandBtn_pressed"]
+[connection signal="pressed" from="hatStandBtn" to="." method="_on_hat_stand_btn_pressed"]
+[connection signal="pressed" from="WindowBtn" to="." method="_on_HatStandBtn_pressed"]
+[connection signal="pressed" from="WindowBtn" to="." method="_on_hat_stand_btn_pressed"]

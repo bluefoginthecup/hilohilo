@@ -1,6 +1,12 @@
-res://scenes/main.tscn::74cf34ed65f7192a65fc8db746fbe054::1757083390::res://.godot/exported/133200997/export-3ad5c15c4f3250da0cc7c1af1770d85f-main.scn
-res://scenes/shop.tscn::cbaf502c8b015628b913ec06fddab697::1757083294::res://.godot/exported/133200997/export-4b603ba22abe1ca4e7b53e2c2e7d249e-shop.scn
-res://scenes/SceneManager.tscn::d95286c33d72e6e15c4821720d7d72bd::1757083294::res://.godot/exported/133200997/export-3174b0d9f6525ae27861b049b851ea0b-SceneManager.scn
-res://scenes/DialogueRotator.tscn::8fa4ed97fe043172ddc1fef64b393092::1757083294::res://.godot/exported/133200997/export-e75257b59736c42f0a82c5e555205813-DialogueRotator.scn
-res://ui/BookPicker.tscn::40eba8c477c3a6a55feef7527d021843::1757083294::res://.godot/exported/133200997/export-d66bdb77e26d2dd44e15566becd8e0b8-BookPicker.scn
+res://scenes/SceneManager.tscn::d95286c33d72e6e15c4821720d7d72bd::1768231750::res://.godot/exported/133200997/export-3174b0d9f6525ae27861b049b851ea0b-SceneManager.scn
+res://scenes/DialogueRotator.tscn::8fa4ed97fe043172ddc1fef64b393092::1768231751::res://.godot/exported/133200997/export-e75257b59736c42f0a82c5e555205813-DialogueRotator.scn
+res://ui/BookPicker.tscn::40eba8c477c3a6a55feef7527d021843::1757334210::res://.godot/exported/133200997/export-d66bdb77e26d2dd44e15566becd8e0b8-BookPicker.scn
 res://assets/app_theme.tres::1f9449bcc2405815d97a6ca046465dec::1757083113::res://.godot/exported/133200997/export-f8e22d2315a66f90cbec6a7184e1d95c-app_theme.res
+res://scenes/GardenScene.tscn::5f5aaed62a027a2420c7c9934942f270::1768231750::res://.godot/exported/133200997/export-87ac9eb12acb59be25aee207a174fb2a-GardenScene.scn
+res://default_bus_layout.tres::278463cd475e9a4dd6b5acc1e29164a1::1757337926::res://.godot/exported/133200997/export-19246414aa9fb561ced4b8dce477acec-default_bus_layout.res
+res://scenes/BaseScene2d.tscn::69e33d2eabc04ea9111f61df83468620::1768231751::res://.godot/exported/133200997/export-c2b05fc6d935a1b619f3e372589a78c4-BaseScene2d.scn
+res://scenes/BaseSceneUI.tscn::10ebf298be3bec445f81b1fbab374b61::1768231751::res://.godot/exported/133200997/export-8141dd52235cdeb31c07f3d478875304-BaseSceneUI.scn
+res://scenes/Main.tscn::ddb2b134597679f01a9e03db66921a00::1768231750::res://.godot/exported/133200997/export-4a24720ee5e787dbe30abc634fa3679d-Main.scn
+res://scenes/Shop.tscn::e7bb1c88a81af0684cfd2c751e176d7f::1768231750::res://.godot/exported/133200997/export-6fc12e30b65226fff172c0c706c2e819-Shop.scn
+res://scenes/HouseFront.tscn::cb000cb886719c3bb0f3c5c6957698a7::1768231751::res://.godot/exported/133200997/export-bab82cfcb3cdd1a8d174d3945caf3cde-HouseFront.scn
+res://scenes/WalkTrail.tscn::2a1bffbd6c4b5b296340a37450fedfe0::1768231751::res://.godot/exported/133200997/export-996f0c9a1c204e6ac271ffa7af8ddb58-WalkTrail.scn

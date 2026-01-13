@@ -19,7 +19,7 @@ func _ready():
 func open_centered():
 	show()
 	top_level = true
-	z_index = 9999
+	z_index = 4096
 	mouse_filter = MOUSE_FILTER_STOP
 
 	await get_tree().process_frame

@@ -1,0 +1,52 @@
+[gd_scene load_steps=5 format=3 uid="uid://c0ugl0fa4ar60"]
+
+[ext_resource type="Script" uid="uid://tk0ca1uosxrt" path="res://scenes/HouseFront.gd" id="1_syhiw"]
+[ext_resource type="Texture2D" uid="uid://bsag67ngo5pg6" path="res://assets/images/housefront/bg_housefront.png" id="2_syhiw"]
+[ext_resource type="Script" uid="uid://nv86pwk7nlyv" path="res://scenes/Shop.gd" id="4_bpvwp"]
+[ext_resource type="Script" uid="uid://cq3wkjyxtjky8" path="res://ui/common/BackNavBtn.gd" id="4_r8t8a"]
+
+[node name="HouseFront" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_syhiw")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -2.0
+offset_top = -6.0
+offset_right = 1022.0
+offset_bottom = 1530.0
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("2_syhiw")
+
+[node name="Bubble" type="Label" parent="."]
+layout_mode = 0
+offset_left = 72.0
+offset_top = 424.0
+offset_right = 449.0
+offset_bottom = 566.0
+
+[node name="HomeBtn" type="Button" parent="."]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 136.0
+offset_right = 303.0
+offset_bottom = 266.0
+script = ExtResource("4_r8t8a")
+label_text = "으로"
+target_scene_path = "uid://dmrnfb7rqydp4"
+
+[node name="ShopBtn" type="Button" parent="."]
+layout_mode = 0
+offset_left = 322.0
+offset_top = 312.0
+offset_right = 561.0
+offset_bottom = 442.0
+script = ExtResource("4_bpvwp")
+
+[node name="TrailBtn" type="Button" parent="."]
+layout_mode = 0
+offset_left = 288.0
+offset_top = 604.0
+offset_right = 527.0
+offset_bottom = 734.0
